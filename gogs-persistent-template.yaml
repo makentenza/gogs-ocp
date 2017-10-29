@@ -283,7 +283,7 @@ objects:
       [repository]
       ROOT = /opt/gogs/data/repositories
       PREFERRED_LICENSES = Apache License 2.0,MIT License
-      DISABLE_HTTP_GIT = true
+      DISABLE_HTTP_GIT = false
 
       [server]
       ROOT_URL=https://${HOSTNAME}
@@ -298,7 +298,7 @@ objects:
       [service]
       ACTIVE_CODE_LIVE_MINUTES = 180
       RESET_PASSWD_CODE_LIVE_MINUTES = 180
-      DISABLE_REGISTRATION = true
+      DISABLE_REGISTRATION = false
       REQUIRE_SIGNIN_VIEW = true
       ENABLE_NOTIFY_MAIL = false
       ENABLE_REVERSE_PROXY_AUTHENTICATION = false
