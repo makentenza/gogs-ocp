@@ -9,7 +9,6 @@ objects:
 - kind: ServiceAccount
   apiVersion: v1
   metadata:
-    creationTimestamp: null
     labels:
       app: ${APPLICATION_NAME}
     name: ${APPLICATION_NAME}
@@ -238,7 +237,7 @@ objects:
     - name: "${GOGS_VERSION}"
       from:
         kind: DockerImage
-        name: docker.io/openshiftdemos/gogs:${GOGS_VERSION}
+        name: docker.io/makentenza/gogs:${GOGS_VERSION}
       importPolicy: {}
       annotations:
         description: The Gogs git server docker image
